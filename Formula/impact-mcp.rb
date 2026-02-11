@@ -1,5 +1,5 @@
 class ImpactMcp < Formula
-  desc "Local-first AI agent helping engineers amplify impact and grow in their role"
+  desc "Local-first AI toolkit helping engineers amplify impact and grow in their role"
   homepage "https://github.com/muchq/MoonBase/tree/main/domains/ai/apps/impact_mcp"
   license "MIT"
   version "0.0.9-alpha"
