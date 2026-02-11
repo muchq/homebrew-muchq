@@ -2,16 +2,16 @@ class ImpactMcp < Formula
   desc "Local-first AI agent helping engineers amplify impact and grow in their role"
   homepage "https://github.com/muchq/MoonBase/tree/main/domains/ai/apps/impact_mcp"
   license "MIT"
-  version "0.0.8-alpha"
+  version "0.0.9-alpha"
 
   on_macos do
     url "https://github.com/muchq/MoonBase/releases/download/impact-mcp-v#{version}/impact-mcp-#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "a58e4aeaca7f512bad585979441b2b4c90faa7b52bdd6fe8f62548a52d133c2f"
+    sha256 "12155eb5558f6dee71f31eef4376735f87aa5c54a32a5011b61df7e74df25699"
   end
 
   on_linux do
     url "https://github.com/muchq/MoonBase/releases/download/impact-mcp-v#{version}/impact-mcp-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ae45e8a1688696cfb0b3afed4646e28593e07f87ad0b00fd6b116d607d3a4df5"
+    sha256 "df43b67ebb2fb645d5478126263d6553d502133073488898aff40573617fb5ec"
   end
 
   def install
