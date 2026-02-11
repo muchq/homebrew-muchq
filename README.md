@@ -13,4 +13,4 @@ brew install impact-mcp
 
 | Formula | Description |
 |---------|-------------|
-| [impact-mcp](Formula/impact-mcp.rb) | Local-first AI agent helping engineers amplify impact and grow in their role |
+| [impact-mcp](Formula/impact-mcp.rb) | Local-first AI toolkit helping engineers amplify impact and grow in their role |
