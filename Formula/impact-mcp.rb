@@ -18,6 +18,10 @@ class ImpactMcp < Formula
     bin.install "impact-mcp"
   end
 
+  def post_install
+    system "#{bin}/impact-mcp", "setup"
+  end
+
   # For development: build from source instead of downloading a release
   # To use: `brew install --build-from-source ./Formula/impact-mcp.rb`
   head "https://github.com/muchq/MoonBase.git", branch: "main"
