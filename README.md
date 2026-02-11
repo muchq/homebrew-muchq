@@ -4,7 +4,7 @@ Homebrew tap for [muchq](https://github.com/muchq) projects.
 
 ## Usage
 
-```
+```bash
 brew tap muchq/muchq
 brew install impact-mcp
 ```
