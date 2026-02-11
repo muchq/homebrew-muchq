@@ -18,8 +18,11 @@ class ImpactMcp < Formula
     bin.install "impact-mcp"
   end
 
-  def post_install
-    system "#{bin}/impact-mcp", "setup"
+  def caveats
+    <<~EOS
+      To complete the installation, please run:
+        impact-mcp setup
+    EOS
   end
 
   # For development: build from source instead of downloading a release
