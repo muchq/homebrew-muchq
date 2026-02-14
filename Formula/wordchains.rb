@@ -2,16 +2,16 @@ class Wordchains < Formula
   desc "Solver for Lewis Carroll's Doublets (word ladder) puzzle"
   homepage "https://github.com/muchq/MoonBase/tree/main/domains/games/apps/wordchains"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     url "https://github.com/muchq/MoonBase/releases/download/wordchains-v#{version}/wordchains-#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "aa8944e76050742a53391674f22522e401255efea998a57a580012f93fd0ab9c"
+    sha256 "6ef19b1e356e5f75047fee4bce111cb5abf28f6149f0a234b3a6e98389f8225c"
   end
 
   on_linux do
     url "https://github.com/muchq/MoonBase/releases/download/wordchains-v#{version}/wordchains-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "5dd9394f6b9477e162a11affff79f0c0b85762673b13bd0ff25e4201ae06f824"
+    sha256 "0934dc9a06c2179ec2fca662e494ed5227e03b0a0ea6b17d2a446cd63e22b84a"
   end
 
   def install
