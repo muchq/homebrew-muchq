@@ -6,12 +6,12 @@ class Microgpt < Formula
 
   on_macos do
     url "https://github.com/muchq/MoonBase/releases/download/microgpt-v#{version}/microgpt-#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "01f78b8212fbf44d57e706cdd7a287462a9d2004f8aa4a162bce26082bd2b3d0"
   end
 
   on_linux do
     url "https://github.com/muchq/MoonBase/releases/download/microgpt-v#{version}/microgpt-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    sha256 "312419fe56a2b46c1fb6435df93136ef8485110c8eb497ebc086322c580cbcac"
   end
 
   def install
