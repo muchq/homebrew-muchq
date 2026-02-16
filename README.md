@@ -1,5 +1,7 @@
 # homebrew-muchq
 
+[![brew test-bot](https://github.com/muchq/homebrew-muchq/actions/workflows/tests.yml/badge.svg)](https://github.com/muchq/homebrew-muchq/actions/workflows/tests.yml)
+
 Homebrew tap for [muchq](https://github.com/muchq) projects.
 
 ## Usage
