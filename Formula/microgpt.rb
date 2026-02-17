@@ -18,11 +18,25 @@ class Microgpt < Formula
     depends_on "rust" => :build
   end
 
+  resource "chat-model" do
+    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.3.1/chat-model.tar.xz"
+    sha256 "e6f9255e17bd1e39fe9be805dcd0bd91cfc3f6d0ae6c24eabf692201d3acb943"
+  end
+
   def install
     if build.head?
       system "cargo", "install", *std_cargo_args(path: "domains/ai/apps/microgpt_cli")
     else
       bin.install "microgpt"
+    end
+  end
+
+  def post_install
+    model_dir = Pathname.new(ENV["HOME"]) / ".config/microgpt/default-chat-model"
+    model_dir.mkpath
+    resource("chat-model").stage do
+      (model_dir / "meta.json").write (Pathname.pwd / "chat-model/meta.json").read
+      (model_dir / "weights.json").write (Pathname.pwd / "chat-model/weights.json").read
     end
   end
 
