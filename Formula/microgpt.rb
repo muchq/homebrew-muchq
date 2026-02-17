@@ -30,9 +30,11 @@ class Microgpt < Formula
       bin.install "microgpt"
     end
 
+    model_dest = pkgshare/"default-chat-model"
+    model_dest.mkpath
     resource("chat-model").stage do
-      (pkgshare / "default-chat-model").mkpath
-      cp Dir["chat-model/*"], pkgshare / "default-chat-model"
+      cp "chat-model/meta.json", model_dest
+      cp "chat-model/weights.json", model_dest
     end
   end
 
