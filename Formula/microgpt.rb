@@ -29,15 +29,22 @@ class Microgpt < Formula
     else
       bin.install "microgpt"
     end
+
+    resource("chat-model").stage do
+      (pkgshare / "default-chat-model").mkpath
+      cp Dir["chat-model/*"], pkgshare / "default-chat-model"
+    end
   end
 
-  def post_install
-    model_dir = Pathname.new(ENV["HOME"]) / ".config/microgpt/default-chat-model"
-    model_dir.mkpath
-    resource("chat-model").stage do
-      (model_dir / "meta.json").write (Pathname.pwd / "chat-model/meta.json").read
-      (model_dir / "weights.json").write (Pathname.pwd / "chat-model/weights.json").read
-    end
+  def caveats
+    <<~EOS
+      A default chat model has been installed to:
+        #{pkgshare}/default-chat-model
+
+      To use it, copy it to your config directory:
+        mkdir -p ~/.config/microgpt
+        cp -r #{pkgshare}/default-chat-model ~/.config/microgpt/default-chat-model
+    EOS
   end
 
   test do
