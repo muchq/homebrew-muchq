@@ -4,11 +4,11 @@ class Microgpt < Formula
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.3.1/microgpt-0.3.1-aarch64-apple-darwin.tar.gz"
-    sha256 "c8df55b291314e5edf32d93602cf50771140256050e989b94ee50a1e41ef01c9"
+    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.3.2/microgpt-0.3.2-aarch64-apple-darwin.tar.gz"
+    sha256 "adcc43ae78ac364dd7f64054aa4f831397e547eeb715492167adbf250b545abf"
   elsif OS.linux?
-    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.3.1/microgpt-0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "69d7786f476dc2c584841245898b0dde1d35642d5b0329c35767d84f36d79e04"
+    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.3.2/microgpt-0.3.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "af8deb4a9cf0a8b315ea81200688d899520005b0f2b9549d7f4cbf6a4635ce4a"
   end
 
   # For development: build from source instead of downloading a release
