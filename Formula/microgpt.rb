@@ -33,8 +33,8 @@ class Microgpt < Formula
     model_dest = pkgshare/"default-chat-model"
     model_dest.mkpath
     resource("chat-model").stage do
-      cp "chat-model/meta.json", model_dest
-      cp "chat-model/weights.json", model_dest
+      cp "meta.json", model_dest
+      cp "weights.json", model_dest
     end
   end
 
