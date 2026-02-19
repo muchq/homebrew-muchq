@@ -46,7 +46,7 @@ class Microgpt < Formula
 
       To use it, copy it to your config directory:
         mkdir -p ~/.config/microgpt
-        cp -r #{pkgshare}/default-chat-model ~/.config/microgpt/default-chat-model
+        cp -r #{pkgshare}/default-chat-model ~/.config/microgpt
     EOS
   end
 
