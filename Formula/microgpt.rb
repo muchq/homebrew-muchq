@@ -1,5 +1,5 @@
 class Microgpt < Formula
-  desc "Minimal GPT trainer and chat agent with a from-scratch autograd engine"
+  desc "Minimal GPT trainer and chat agent with BPE tokenization and Metal acceleration"
   homepage "https://github.com/muchq/MoonBase/tree/main/domains/ai/apps/microgpt_cli"
   license "MIT"
 
@@ -19,8 +19,8 @@ class Microgpt < Formula
   end
 
   resource "chat-model" do
-    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.3.1/chat-model.tar.xz"
-    sha256 "e6f9255e17bd1e39fe9be805dcd0bd91cfc3f6d0ae6c24eabf692201d3acb943"
+    url "https://github.com/muchq/MoonBase/releases/download/microgpt-v0.6.0/chat-model.tar.xz"
+    sha256 "34c7a86dd163c6d6c5529655afc8739e3db3795dfa42db827254918643ae95f3"
   end
 
   def install
@@ -34,7 +34,8 @@ class Microgpt < Formula
     model_dest.mkpath
     resource("chat-model").stage do
       cp "meta.json", model_dest
-      cp "weights.json", model_dest
+      cp "tokenizer.json", model_dest
+      cp "weights.safetensors", model_dest
     end
   end
 
