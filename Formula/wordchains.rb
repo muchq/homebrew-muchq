@@ -4,11 +4,11 @@ class Wordchains < Formula
   license "MIT"
 
   if OS.mac?
-    url "https://github.com/muchq/MoonBase/releases/download/wordchains-v0.1.1/wordchains-0.1.1-aarch64-apple-darwin.tar.gz"
-    sha256 "6ef19b1e356e5f75047fee4bce111cb5abf28f6149f0a234b3a6e98389f8225c"
+    url "https://github.com/muchq/MoonBase/releases/download/wordchains-v0.1.2/wordchains-0.1.2-aarch64-apple-darwin.tar.gz"
+    sha256 "30ae59101e223fea1c40ebca0979a7f05dd1e1f00330bf631be87f48160efc34"
   elsif OS.linux?
-    url "https://github.com/muchq/MoonBase/releases/download/wordchains-v0.1.1/wordchains-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "0934dc9a06c2179ec2fca662e494ed5227e03b0a0ea6b17d2a446cd63e22b84a"
+    url "https://github.com/muchq/MoonBase/releases/download/wordchains-v0.1.2/wordchains-0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "e2a2beebcd64795facb04e2cabb321ddd87a4a57bede6033e1a8e700e63cc4a8"
   end
 
   # For development: build from source instead of downloading a release
